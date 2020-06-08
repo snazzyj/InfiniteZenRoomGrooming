@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import Logo from './assests/images/logo.png'
+import Logo from './assests/images/logo.png';
+import Logo2 from './assests/images/logo2.png';
 import Homepage from './homepage/homepage.js';
 import About from './about/about.js';
 import Gallary from './gallary/gallary.js';
@@ -16,7 +17,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
         <header>
-              <img className="logo" src={Logo} alt="Infinite Zen Room Grooming" />
+              <img className="logo" src={Logo2} alt="Infinite Zen Room Grooming" />
             <nav>
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>

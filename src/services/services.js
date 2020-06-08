@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import './services.css'
 
 class Services extends Component {
     render() {
         return (
-            <section>
+            <section className="services">
                 <h1>Infinite Zen Room Grooming LLC + Pet Care A La Carte Packaging</h1>
                 <h3>Providing The Best Care For Your Best Friends</h3>
 
-                <h3>Grooming:</h3>
+                <h3>Grooming</h3>
                 <ul>
                     <li>Nail Trim $12</li>
                     <li>A La Carte Anal Glands $18</li>
@@ -17,7 +18,7 @@ class Services extends Component {
                     <p>note:grooming costs will vary depending on your pet’s breed and coat condition</p>
                 </ul>
 
-                <h3>Overnight Stays:</h3>
+                <h3>Overnight Stays</h3>
                 <ul>
                     <li>$55(up to 2 dogs) per night $12 per additional dog</li>
                     <li>4th dog is free</li>
@@ -34,7 +35,7 @@ class Services extends Component {
                 </ul>
 
 
-                <h3>Additional Pet Care:</h3>
+                <h3>Additional Pet Care</h3>
 
                 <ul>
                     <li>$8 per Day For The Following Pets:
@@ -55,14 +56,14 @@ class Services extends Component {
         <ul>
                             <li>Feeding</li>
                             <li>Watering</li>
-                            <li>Bedding Change(if necessary)</li>
-                            <li>Water Change(does NOT include salt water; fresh water only)</li>
-                            <li>Handling(if possible or requested)</li>
+                            <li>Bedding Change (if necessary)</li>
+                            <li>Water Change (does NOT include salt water; fresh water only)</li>
+                            <li>Handling (if possible or requested)</li>
                         </ul>
                     </li>
                 </ul>
 
-                <h3>Mileage:</h3>
+                <h3>Mileage</h3>
                 <p>$0.55/mile outside the greater Madison area.</p>
 
             </section>

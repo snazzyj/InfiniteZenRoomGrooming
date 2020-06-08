@@ -56,12 +56,12 @@ class Contact extends Component {
     render() {
         console.log(this.state)
         return (
-            <Fragment>
-                <h1>Hello from Contact</h1>
+            <section className="contact">
+                <h1>Contact Us</h1>
                 <p>Phone: (xxx) xxx - xxxx</p>
                 <p>Email: xxx@xxx.com</p>
 
-                <form>
+                <form className="contactForm">
                     <label htmlFor="name">Name
                         <input type="text" name="name" required onChange={this.handleName} />
                     </label>
@@ -72,11 +72,11 @@ class Contact extends Component {
                         <input type="phone" name="phone" required onChange={this.handlePhone} />
                     </label>
 
-                    <textarea onChange={this.handleMessage} />
+                    <textarea onChange={this.handleMessage} placeholder="Your message here"/>
 
                     <button onClick={this.handleSubmit}>Send Email</button>
                 </form>
-            </Fragment>
+            </section>
         )
     }
 }

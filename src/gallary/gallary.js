@@ -5,9 +5,8 @@ import './gallary.css'
 class Gallary extends Component {
     
     render() {
-        console.log(ImageData)
         return (
-            <Fragment>
+            <section className="dogGallary">
                 <ul className="gallary">
                     {ImageData.map((img, index) => {
                         return (
@@ -17,7 +16,7 @@ class Gallary extends Component {
                         )
                     })}
                 </ul>
-            </Fragment>
+            </section>
         )
     }
 }

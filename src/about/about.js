@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ProfilePic from '../assests/images/profile.png'
 
 class About extends Component {
     render() {
         return (
-            <section>
+            <section className="about">
                 <h1>Get to know Jenn Joyce!</h1>
+                <img src={ProfilePic} alt="Jennifer Joyce" />
                 <p>As an animal lover of all shapes and sizes, Jenn has years of experience and has developed a passion working with dogs  since she was very young.
                 Participating in many dog obedience classes, agility, canine good citizen, showmanship and doga classes she has become well versed in dog behavior.
                 </p>
