@@ -54,7 +54,6 @@ class Contact extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <section className="contact">
                 <h1>Contact Us</h1>
