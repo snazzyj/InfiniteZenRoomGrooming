@@ -1,3 +1,7 @@
 .services > h3 {
     text-decoration: underline;
 }
+
+.services > ul > li > span {
+    font-weight: bold;
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
-import Logo2 from './assests/images/logo2.png';
+import Logo3 from './assests/images/logo3.png';
 import Homepage from './homepage/homepage.js';
 import About from './about/about.js';
 import Gallary from './gallary/gallary.js';
@@ -19,38 +19,8 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <header>
-            <img className="logo" src={Logo2} alt="Infinite Zen Room Grooming" />
+            <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
             <nav>
-              {/* <Link to="/">
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-                  Home
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              </Link>
-              <Link to="/about">
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-                  About
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              </Link>
-              <Link to="/gallary">
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-                  Gallary
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              </Link>
-              <Link to="/contact">
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-                  Contact
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              </Link>
-              <Link to="/grooming">
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-                  Grooming Services
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              </Link>
-              <Link to="/additionalservices">
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-                  Additional Services
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              </Link> */}
                 <FontAwesomeIcon icon={faPaw} size="xs" />
               <Link to="/">
                   Home

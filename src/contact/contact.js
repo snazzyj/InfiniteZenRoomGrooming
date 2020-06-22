@@ -56,11 +56,15 @@ class Contact extends Component {
     render() {
         return (
             <section className="contact">
-                <h1>Contact Us</h1>
-                <p>Phone: (xxx) xxx - xxxx</p>
-                <p>Email: xxx@xxx.com</p>
+
+                <div>
+                    <h1>Contact Us</h1>
+                    <p>Phone: (608) 501-4742</p>
+                    <p>Email: zenroomgrooming@gmail.com</p>
+                </div>
 
                 <form className="contactForm">
+                    <h2>Send us a Message</h2>
                     <label htmlFor="name">Name
                         <input type="text" name="name" required onChange={this.handleName} />
                     </label>
@@ -71,7 +75,7 @@ class Contact extends Component {
                         <input type="phone" name="phone" required onChange={this.handlePhone} />
                     </label>
 
-                    <textarea onChange={this.handleMessage} placeholder="Your message here"/>
+                    <textarea onChange={this.handleMessage} placeholder="Your message here" rows="10"/>
 
                     <button onClick={this.handleSubmit}>Send Email</button>
                 </form>

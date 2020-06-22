@@ -8,10 +8,10 @@ class AdditionalServices extends Component {
                 <h1>Pet Care A La Carte Packaging</h1>
                 <h3>Overnight Stays</h3>
                 <ul>
-                    <li>$55(up to 2 dogs) per night $12 per additional dog</li>
+                    <li>$55 (up to 2 dogs) per night <span>$12 per additional dog</span></li>
                     <li>4th dog is free</li>
                     <li>Overnight stay includes:
-        <ul>
+                        <ul>
                             <li>2 potties per day</li>
                             <li>Unlimited let outs when I am there</li>
                             <li>AM and PM feedings</li>
@@ -27,7 +27,8 @@ class AdditionalServices extends Component {
 
                 <ul>
                     <li>$8 per Day For The Following Pets:
-            <ul>
+                        <ul>
+                            <li>Cats</li>
                             <li>Lizards</li>
                             <li>Snakes</li>
                             <li>Guinea Pigs</li>
@@ -41,7 +42,7 @@ class AdditionalServices extends Component {
                     </li>
 
                     <li>Includes:
-        <ul>
+                        <ul>
                             <li>Feeding</li>
                             <li>Watering</li>
                             <li>Bedding Change (if necessary)</li>
