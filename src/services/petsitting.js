@@ -11,7 +11,7 @@ class AdditionalServices extends Component {
                     <li>$55 (up to 2 dogs) per night <span>$12 per additional dog</span></li>
                     <li>4th dog is free</li>
                     <li>Overnight stay includes:
-                        <ul>
+                        <ul className="subList">
                             <li>2 potties per day</li>
                             <li>Unlimited let outs when I am there</li>
                             <li>AM and PM feedings</li>
@@ -27,8 +27,7 @@ class AdditionalServices extends Component {
 
                 <ul>
                     <li>$8 per Day For The Following Pets:
-                        <ul>
-                            <li>Cats</li>
+                        <ul className="subList">
                             <li>Lizards</li>
                             <li>Snakes</li>
                             <li>Guinea Pigs</li>
@@ -38,11 +37,14 @@ class AdditionalServices extends Component {
                             <li>Fish</li>
                             <li>Chickens</li>
                         </ul>
+                    </li>
 
+                    <li>
+                        Cats: 12$ per Day
                     </li>
 
                     <li>Includes:
-                        <ul>
+                        <ul className="subList">
                             <li>Feeding</li>
                             <li>Watering</li>
                             <li>Bedding Change (if necessary)</li>

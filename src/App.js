@@ -13,7 +13,22 @@ import './App.css';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHovered: false,
+    }
+  }
+
+  toggleHover = () => {
+    this.setState(prevState => ({
+      isHovered: !prevState.isHovered
+    }))
+  }
+
   render() {
+
+    const {isHovered} = this.state;
 
     return (
       <div className="App">
@@ -38,15 +53,34 @@ class App extends Component {
                   Contact
               </Link>
                 <FontAwesomeIcon icon={faPaw} size="xs" />
-              <Link to="/grooming">
+              <li className="menu" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
+                Services
+                {isHovered 
+                ?
+                <div className="subMenu">
+                  <Link to="/grooming">
                   Grooming Services
-              </Link>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              <Link to="/additionalservices">
+                  </Link>
+                  <Link to="/additionalservices">
                   Additional Services
-              </Link>
+                  </Link>
+                </div>
+                :
+                <div className="subMenu">
+                <Link to="/grooming" className="hidden">
+                Grooming Services
+                </Link>
+                <Link to="/additionalservices" className="hidden">
+                Additional Services
+                </Link>
+              </div>
+                }
+              </li>
+
                 <FontAwesomeIcon icon={faPaw} size="xs" />
+
             </nav>
+
           </header>
           
           <main>

@@ -4,6 +4,25 @@
   font-size: 18px;
 }
 
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #36454d;
+}
+
+
+.hidden {
+  display: none;
+}
+
 main {
   width: 75%;
   margin-left: auto;
@@ -33,23 +52,62 @@ nav {
   border-bottom: 1px white solid;
 }
 
-nav > a {
+nav > a, .subMenu > a, .services > ul > li, .menu {
   margin: 0 15px;
   padding: 0 10px;
   text-decoration: none;
-  /* font-weight: bold; */
 }
 
-nav > a:link {
+nav > a:link, .subMenu > a:link {
   color: white;
 }
 
-nav > a:visited {
+nav > a:visited, .subMenu > a:visited {
   color: white;
 }
 
-nav > a:hover {
+nav > a:hover, .subMenu > a:hover {
   color: #f5d000;
+}
+
+.missionStatement {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dogGrooming, .petService {
+  width: 320px;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.links > div > a {
+  width: 320px;
+  height: 250px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.links > div > a:visited {
+  color: black;
+}
+
+.links > div > a:hover {
+  color: black;
+}
+
+.dogGrooming {
+  background: url('assests/images/puppy1.jpg') no-repeat;
+}
+
+.petService {
+  background: url('assests/images/animals.jpg') no-repeat;
 }
 
 .about, .services {
@@ -122,3 +180,24 @@ textarea {
 .cost {
   float: right;
 }
+
+.subList > li {
+  list-style-type: disc;
+}
+
+@media only screen and (max-width: 1605px) {
+
+  nav {
+    width: 85%;
+  }
+
+}
+
+@media only screen and (max-width: 1420px ) {
+  nav {
+    font-size: 22px;
+  }
+
+
+}
+
