@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw } from '@fortawesome/free-solid-svg-icons';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Logo3 from './assests/images/logo3.png';
 import Homepage from './homepage/homepage.js';
 import About from './about/about.js';
 import Gallary from './gallary/gallary.js';
 import Contact from './contact/contact.js';
 import Grooming from './services/grooming.js';
+import Nav from './nav/nav.js';
+import MobileNav from './nav/mobileNav.js';
 import AdditionalServices from './services/petsitting.js'
 import './App.css';
 
@@ -16,70 +16,34 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHovered: false,
+      isSmallScreen: false
     }
   }
 
-  toggleHover = () => {
-    this.setState(prevState => ({
-      isHovered: !prevState.isHovered
-    }))
+  componentDidMount() {
+    let mediaQuery = window.matchMedia('(max-width: 640px)');
+
+    if(mediaQuery.matches) {
+      this.setState({
+        isSmallScreen: true
+      })
+    }
   }
 
   render() {
-
-    const {isHovered} = this.state;
-
+    const {isSmallScreen} = this.state;
     return (
       <div className="App">
         <BrowserRouter>
           <header>
             <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
-            <nav>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              <Link to="/">
-                  Home
-              </Link>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              <Link to="/about">
-                  About
-              </Link>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              <Link to="/gallary">
-                  Gallary
-              </Link>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              <Link to="/contact">
-                  Contact
-              </Link>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-              <li className="menu" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
-                Services
-                {isHovered 
-                ?
-                <div className="subMenu">
-                  <Link to="/grooming">
-                  Grooming Services
-                  </Link>
-                  <Link to="/additionalservices">
-                  Additional Services
-                  </Link>
-                </div>
-                :
-                <div className="subMenu">
-                <Link to="/grooming" className="hidden">
-                Grooming Services
-                </Link>
-                <Link to="/additionalservices" className="hidden">
-                Additional Services
-                </Link>
-              </div>
-                }
-              </li>
-
-                <FontAwesomeIcon icon={faPaw} size="xs" />
-
-            </nav>
+            
+            {isSmallScreen ? (
+              <MobileNav /> 
+            ) : (
+              <Nav />
+            )
+          }
 
           </header>
           

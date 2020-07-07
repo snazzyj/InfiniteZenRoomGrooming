@@ -5,3 +5,36 @@
 .services > ul > li > span {
     font-weight: bold;
 }
+
+.services {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+.services > ul > li > p {
+  display: inline-block;
+}
+
+.cost {
+  float: right;
+}
+
+.subList > li {
+  list-style-type: disc;
+}
+  
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 1605px) {
+    .services {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .services {
+        width: 90%;
+    }
+}

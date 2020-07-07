@@ -26,19 +26,7 @@ import Dog24 from '../assests/dogs/dog24.jpg';
 const ImageData = [
     {
         text: 'Default Alt Text',
-        image: Dog1
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog2
-    },
-    {
-        text: 'Default Alt Text',
         image: Dog3
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog4
     },
     {
         text: 'Default Alt Text',
@@ -66,39 +54,16 @@ const ImageData = [
     },
     {
         text: 'Default Alt Text',
-        image: Dog11
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog12
-    },
-    {
-        text: 'Default Alt Text',
         image: Dog13
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog14
     },
     {
         text: 'Default Alt Text',
         image: Dog15
     },
-    {
-        text: 'Default Alt Text',
-        image: Dog16
-    },
+    
     {
         text: 'Default Alt Text',
         image: Dog17
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog18
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog19
     },
     {
         text: 'Default Alt Text',
@@ -120,6 +85,42 @@ const ImageData = [
         text: 'Default Alt Text',
         image: Dog24
     },
+    {
+        text: 'Default Alt Text',
+        image: Dog11
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog12
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog1
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog2
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog4
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog14
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog16
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog18
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog19
+    }
 ]
 
 export default ImageData

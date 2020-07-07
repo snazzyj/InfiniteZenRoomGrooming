@@ -42,8 +42,9 @@ class AdditionalServices extends Component {
                     <li>
                         Cats: 12$ per Day
                     </li>
+                    <br />
 
-                    <li>Includes:
+                    <li><strong>Includes:</strong>
                         <ul className="subList">
                             <li>Feeding</li>
                             <li>Watering</li>
@@ -55,7 +56,11 @@ class AdditionalServices extends Component {
                 </ul>
 
                 <h3>Mileage</h3>
-                <p>$0.55/mile outside the greater Madison area.</p>
+                <ul>
+                    <li>
+                        <p>$0.55 / Mile outside the greater Madison area.</p>
+                    </li>
+                </ul>
             </section>
         )
     }
