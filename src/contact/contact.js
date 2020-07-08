@@ -46,9 +46,11 @@ class Contact extends Component {
         emailjs.send('infinitezenroomgrooming', 'template_HXUJMT8p',
                          emailToSend, 'user_fspuszkuYu1bFDmfJ5V9B')
                          .then((result) => {
-                             console.log(result.text)
+                             if(result.status) {
+                                 alert('Message has been sent!')
+                             }
                          }, (error) => {
-                             console.log(error.text)
+                             alert('An error occured')
                          })
 
     }
