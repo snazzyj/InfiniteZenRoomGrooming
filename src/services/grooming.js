@@ -7,8 +7,8 @@ class Grooming extends Component {
            <section className="services">
                 <h2>Providing The Best Care For Your Best Friends</h2>
 
-                <h3>Grooming Services Available :</h3>
-                <ul>
+                <h3>Grooming Services Available</h3>
+                {/* <ul>
                     <li>
                         <p className="service">
                             Nail Trim
@@ -51,7 +51,40 @@ class Grooming extends Component {
                             
                     </li>
                     <p>*Note: Grooming costs will vary depending on your pet’s breed and coat condition</p>
-                </ul>
+                </ul> */}
+
+                <div className="groomingService">
+                    <div className="serviceAndPrice">
+                        <div>
+                            Nail Trim
+                        </div>
+
+                        <div>
+                            $12
+                        </div>
+                    </div>
+
+                    <div className="serviceAndPrice">
+                        <div>A La carte Anal Glands</div>
+                        <div>$18</div>
+                    </div>
+                    <div className="serviceAndPrice">
+                        <div>Bath and Blow Dry**</div>
+                        <div>$20-$90</div>
+                    </div>
+                    <div className="serviceAndPrice">
+                        <div>Blowout***</div>
+                        <div>$50-$95</div>
+                    </div>
+                    <div className="serviceAndPrice">
+                        <div>Brush</div>
+                        <div>$10-$25</div>
+                    </div>
+
+                    <p>*Note: Grooming costs will vary depending on your pet’s breed and coat condition</p>
+                    <p>** Bath and Blow Dry for Short hair and smaller breeds</p>
+                    <p>*** Blowout for Double coated and large breeds</p>
+                </div>
            </section> 
         )
     }

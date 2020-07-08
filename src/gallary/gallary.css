@@ -8,14 +8,11 @@
 
 .gallary > li {
     margin: 3px 8px;
-    /* width: 320px; */
-    /* height: 300px; */
 }
 
 .dogPhotos {
     border: 1px solid black;
     width: 250px;
     height: auto;
-    /* height: 250px; */
     image-orientation: from-image;
 }

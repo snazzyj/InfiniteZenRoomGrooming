@@ -17,13 +17,26 @@
 }
 
 .cost {
-  float: right;
+  text-align: right;
 }
 
 .subList > li {
   list-style-type: disc;
 }
-  
+
+.serviceAndPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.groomingService {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 16px;
+}
 
 /* Mobile CSS */
 
@@ -37,4 +50,20 @@
     .services {
         width: 90%;
     }
+}
+
+@media only screen and (max-width: 530px) {
+
+    .groomingService {
+        width: 90%
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .groomingService {
+        width: 100%;
+    }
+    
 }

@@ -133,6 +133,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
 
 }
 
+/*Contact Page Styling*/
 .contact > div {
   width: 50%;
   margin-left: auto;
@@ -175,6 +176,10 @@ textarea {
   margin-bottom: 15px;
 }
 
+.contactForm > button {
+  margin-bottom: 25px;
+}
+
 /* Mobile CSS */
 
 @media only screen and (max-width: 1605px) {
@@ -198,6 +203,16 @@ textarea {
 @media only screen and (max-width: 1000px) {
   .missionStatement {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .contactForm, .contact > div {
+    width: 66%;
+  }
+  .contactForm > textarea {
+    width: 90%;
   }
 }
 
@@ -230,4 +245,10 @@ textarea {
     width: 85%;
   }
 
+}
+
+@media only screen and (max-width: 500px) {
+  .contact > div, .contactForm {
+    width: 90%;
+  }
 }
