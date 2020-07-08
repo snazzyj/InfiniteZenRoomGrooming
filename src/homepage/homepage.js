@@ -10,14 +10,14 @@ class Homepage extends Component {
                         To create the "Zen" experience for everyone, whether the grooming is done at a home or in a shop, there are a few elements
                         that go into the "Zen" experience. For the best experience possible for you and your furry friend we use aromatherapy, 
                         dim lighting and gentle relaxation music playing throughout the whole visit.
-                        We keep our standards high and everyone's anxiety low with great communication about the options available for your dog's coat.
+                        We keep our standards high and everyone's anxiety low with great communication about the options available for your pet's coat.
                         Working together to accomplish how you want your best furry friend to look and feel is what Infinite Zen Room Grooming is all about.                         
                     </p>
                 </section>
 
                 <section className="links">
                     <div className="dogGrooming">
-                        <Link to="/grooming">Dog Grooming</Link>
+                        <Link to="/grooming">Pet Grooming</Link>
                     </div>
                     <div className="petService">
                         <Link to="/additionalservices">Pet Services</Link>

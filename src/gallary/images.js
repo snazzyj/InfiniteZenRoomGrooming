@@ -75,14 +75,6 @@ const ImageData = [
     },
     {
         text: 'Default Alt Text',
-        image: Dog22
-    },
-    {
-        text: 'Default Alt Text',
-        image: Dog23
-    },
-    {
-        text: 'Default Alt Text',
         image: Dog24
     },
     {
@@ -92,6 +84,14 @@ const ImageData = [
     {
         text: 'Default Alt Text',
         image: Dog12
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog22
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog23
     },
     {
         text: 'Default Alt Text',
