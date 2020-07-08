@@ -77,7 +77,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
 
 /*Homepage Content Styling*/
 .missionStatement {
-  width: 75%;
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -178,11 +178,9 @@ textarea {
 /* Mobile CSS */
 
 @media only screen and (max-width: 1605px) {
-
   .nav {
     width: 85%;
   }
-
 }
 
 @media only screen and (max-width: 1420px ) {
@@ -191,8 +189,44 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .missionStatement {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .missionStatement {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 740px) {
   .about > img {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 640px) {
+
+  header > img {
+    float: left;
+  }
+
+  header > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .mobileNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  main {
+    margin-top: 250px;
+  }
+
 }
