@@ -31,7 +31,7 @@ class MobileNav extends Component {
                     <FontAwesomeIcon icon={faPaw} size="xs" />
                   </Link>
                   <Link to="/gallary" onClick={this.closeNavBar}>
-                      Gallary
+                      Gallery
                     <FontAwesomeIcon icon={faPaw} size="xs" />
                   </Link>
                   <Link to="/contact" onClick={this.closeNavBar}>

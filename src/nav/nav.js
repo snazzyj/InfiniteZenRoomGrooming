@@ -33,7 +33,7 @@ class Nav extends Component {
           </Link>
             <FontAwesomeIcon icon={faPaw} size="xs" />
           <Link to="/gallary">
-              Gallary
+              Gallery
           </Link>
             <FontAwesomeIcon icon={faPaw} size="xs" />
           <Link to="/contact">
