@@ -6,12 +6,13 @@ class Homepage extends Component {
         return (
             <Fragment>
                 <section className="missionStatement">
-                    <p>Infinite Zen Room Grooming was created with the knowledge that grooming can be a stressful experience for both owner and pet.
-                        To create the "Zen" experience for everyone, whether the grooming is done at a home or in a shop, there are a few elements
-                        that go into the "Zen" experience. For the best experience possible for you and your furry friend we use aromatherapy, 
-                        dim lighting and gentle relaxation music playing throughout the whole visit.
-                        We keep our standards high and everyone's anxiety low with great communication about the options available for your pet's coat.
-                        Working together to accomplish how you want your best furry friend to look and feel is what Infinite Zen Room Grooming is all about.                         
+                    <p> 
+                        We at Infinite Zen Grooming understand that grooming can be a stressful experience for all. 
+                        Our intention is to create a calm “Zen” experience for both you and your fur babies. 
+                        Through the use of gentle massage, soft relaxation music, calming aromatherapy, and gentle acupressure point relaxation,
+                        your pet will experience a grooming session that eases their anxiety and enables them to relax and enjoy the experience.
+                        Great communication with you of what is desired and what is possible with your dogs coat is crucial to keep standards high and anxiety low.
+                        Gentle communication with your pet throughout enhances the experience even more.                         
                     </p>
                 </section>
 
