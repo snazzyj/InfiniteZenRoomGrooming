@@ -8,50 +8,6 @@ class Grooming extends Component {
                 <h2>Providing The Best Care For Your Best Friends</h2>
 
                 <h3>Grooming Services Available</h3>
-                {/* <ul>
-                    <li>
-                        <p className="service">
-                            Nail Trim
-                        </p>
-                        <p className="cost">
-                            $12
-                        </p>
-                    </li>
-                    <li>
-                        <p className="service">
-                            A La Carte Anal Glands
-                        </p>
-                        <p className="cost">
-                            $18
-                        </p>
-                    </li>
-                    <li>
-                        <p className="service">
-                            Bath and Blow Dry(short hair and smaller breeds) 
-                        </p>
-                        <p className="cost">
-                            $20-$90
-                        </p>
-                    </li>
-                    <li>
-                        <p className="service">
-                            Blowout (double coated and large breeds)
-                        </p>
-                        <p className="cost">
-                            $50-$95
-                        </p>
-                    </li>
-                    <li>
-                        <p className="service">
-                            Brush
-                        </p>
-                        <p className="cost">
-                            $10-$25
-                        </p>
-                            
-                    </li>
-                    <p>*Note: Grooming costs will vary depending on your pet’s breed and coat condition</p>
-                </ul> */}
 
                 <div className="groomingService">
                     <div className="serviceAndPrice">
@@ -84,6 +40,13 @@ class Grooming extends Component {
                     <p>*Note: Grooming costs will vary depending on your pet’s breed and coat condition</p>
                     <p>** Bath and Blow Dry for Short hair and smaller breeds</p>
                     <p>*** Blowout for Double coated and large breeds</p>
+                    
+                    <h3>Milage</h3>
+                    <ul>
+                        <li>
+                            <p>Milage: $0.55 / Mile outside the Dane County Area.</p>
+                        </li>
+                    </ul>
                 </div>
            </section> 
         )

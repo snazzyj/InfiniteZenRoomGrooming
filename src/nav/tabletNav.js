@@ -4,21 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import './mobile.css'
 
-class mobileNav extends Component {
+class MobileNav extends Component {
 
-  container = React.createRef()
   state = {
-    isHovered: false,
-    isOpen: false
+    isHovered: false
   }
 
-  componentDidMount() {
-    document.addEventListener('click', this.handleClickOutside, true)
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('click', this.handleClickOutside, true)
-  }
 
   toggleHover = () => {
     this.setState(prevState => ({
@@ -26,42 +17,36 @@ class mobileNav extends Component {
     }))
   }
 
-  toggleMenu = () => {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen
-    }))
+  openMenu = () => {
+    this.setState({
+      isHovered: true
+    })
   }
 
-  handleClickOutside = (e) => {
-    if(this.container.current && !this.container.current.contains(e.target)) {
-      this.setState({
-        isOpen: false
-      })
-    }
+  closeMenu = () => {
+    this.setState({
+      isHovered: false
+    })
   }
 
   render() {
-    const { isHovered, isOpen } = this.state;
+    const { isHovered } = this.state;
     return (
       <div className="container" ref={this.container}>
-        <button onClick={this.toggleMenu} className="menuBtn">Menu</button>
-        {
-          isOpen && (
-
-            <nav className="mobileNav">
-          <Link to="/" onClick={this.toggleMenu}>
+        <nav className="tabletNav">
+          <Link to="/" onClick={this.closeNavBar}>
             Home
                     <FontAwesomeIcon icon={faPaw} size="xs" />
           </Link>
-          <Link to="/about" onClick={this.toggleMenu}>
+          <Link to="/about" onClick={this.closeNavBar}>
             About
                     <FontAwesomeIcon icon={faPaw} size="xs" />
           </Link>
-          <Link to="/gallary" onClick={this.toggleMenu}>
+          <Link to="/gallary" onClick={this.closeNavBar}>
             Gallery
                     <FontAwesomeIcon icon={faPaw} size="xs" />
           </Link>
-          <Link to="/contact" onClick={this.toggleMenu}>
+          <Link to="/contact" onClick={this.closeNavBar}>
             Contact
                     <FontAwesomeIcon icon={faPaw} size="xs" />
           </Link>
@@ -80,11 +65,9 @@ class mobileNav extends Component {
             )}
           </li>
         </nav>
-          )
-        }
       </div>
     )
   }
 }
 
-export default mobileNav
+export default MobileNav

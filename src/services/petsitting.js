@@ -58,7 +58,7 @@ class AdditionalServices extends Component {
                 <h3>Mileage</h3>
                 <ul>
                     <li>
-                        <p>$0.55 / Mile outside the greater Madison area.</p>
+                        <p>$0.55 / Mile outside the Dane County Area.</p>
                     </li>
                 </ul>
             </section>

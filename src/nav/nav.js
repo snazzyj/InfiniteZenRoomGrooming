@@ -43,7 +43,7 @@ class Nav extends Component {
           <li className="menu" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
             Services
             {isHovered 
-            ?
+            &&
             <div className="subMenu">
               <Link to="/grooming">
               Grooming Services
@@ -52,15 +52,6 @@ class Nav extends Component {
               Additional Services
               </Link>
             </div>
-            :
-            <div className="subMenu">
-            <Link to="/grooming" className="hidden">
-            Grooming Services
-            </Link>
-            <Link to="/additionalservices" className="hidden">
-            Additional Services
-            </Link>
-          </div>
             }
           </li>
 
