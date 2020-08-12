@@ -42,7 +42,6 @@ class App extends Component {
 
   render() {
     const {isTablet, isMobile} = this.state;
-    console.log(this.state)
     return (
       <div className="App">
         <BrowserRouter>
