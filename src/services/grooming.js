@@ -35,7 +35,6 @@ const services = [
 
 class Grooming extends Component {
     render() {
-        console.log(this.props.popUpActive)
         return (
             <Fragment>
 
