@@ -66,7 +66,7 @@ class Grooming extends Component {
                         <p>** Bath and Blow Dry for Short hair and smaller breeds</p>
                         <p>*** Blowout for Double coated and large breeds</p>
 
-                        <h3>Milage</h3>
+                        <h3>Mileage</h3>
                         <ul>
                             <li>
                                 <p>Mileage: $0.55 / Mile outside the Dane County Area.</p>
