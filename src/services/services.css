@@ -10,6 +10,7 @@
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+    cursor: default;
 }
   
 .services > ul > li > p {
@@ -29,6 +30,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 1px dotted white;
+    margin-bottom: 10px;
 }
 
 .groomingService {

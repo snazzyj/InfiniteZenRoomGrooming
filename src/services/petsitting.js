@@ -8,7 +8,9 @@ class AdditionalServices extends Component {
                 <h1>Pet Care A La Carte Packaging</h1>
                 <h3>Overnight Stays</h3>
                 <ul>
-                    <li>$55 (up to 2 dogs) per night <span>$12 per additional dog</span></li>
+                    <li>$55 (up to 2 dogs) per night</li>
+                    <li>$12 <span>per additional dog</span></li>
+
                     <li>4th dog is free</li>
                     <li>Overnight stay includes:
                         <ul className="subList">

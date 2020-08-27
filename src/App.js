@@ -18,7 +18,8 @@ class App extends Component {
     super(props);
     this.state = {
       isTablet: false,
-      isMobile: false
+      isMobile: false,
+      popUpActive: true
     }
   }
 
@@ -40,25 +41,25 @@ class App extends Component {
     }
   }
 
+  closePopUp = () => {
+    this.setState({
+      popUpActive: false
+    })
+  }
+
   render() {
-    const {isTablet, isMobile} = this.state;
+    const {isTablet, isMobile, popUpActive} = this.state;
     return (
       <div className="App">
         <BrowserRouter>
           <header>
             <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
             
-          {
-            isTablet ? <TabletNav /> : null
-          }
+          { isTablet ? <TabletNav /> : null }
 
-          {
-            isMobile ? <MobileNav /> : null
-          }
+          { isMobile ? <MobileNav /> : null }
 
-          {
-            !isMobile && !isTablet ? <Nav /> : null
-          }
+          { !isMobile && !isTablet ? <Nav /> : null }
 
 
           </header>
@@ -69,7 +70,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/gallary" component={Gallary} />
               <Route path="/contact" component={Contact} />
-              <Route path="/grooming" component={Grooming} />
+              <Route path="/grooming" render={(props) => <Grooming closePopUp={this.closePopUp} popUpActive={popUpActive}/>} />
               <Route path="/additionalservices" component={AdditionalServices} />
             </Switch>
           </main>
