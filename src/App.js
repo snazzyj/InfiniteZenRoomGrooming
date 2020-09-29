@@ -15,8 +15,8 @@ import Header from './header/header';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       isTablet: false,
       isMobile: false,
@@ -53,17 +53,6 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          {/* <header>
-            <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
-            
-          { isTablet ? <TabletNav /> : null }
-
-          { isMobile ? <MobileNav /> : null }
-
-          { !isMobile && !isTablet ? <Nav /> : null }
-
-
-          </header> */}
 
           <Header isTablet={isTablet} isMobile={isMobile}/>
           

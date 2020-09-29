@@ -7,15 +7,13 @@ class Gallary extends Component {
     render() {
         return (
             <section className="dogGallary">
-                <ul className="gallary">
+                <div className="gallary">
                     {ImageData.map((img, index) => {
                         return (
-                            <li key={index}>
-                                <img src={img.image} alt={img.text} className="dogPhotos"/>
-                            </li>
+                            <img src={img.image} alt={img.text} key={index} className="dogPhotos"/>
                         )
                     })}
-                </ul>
+                </div> 
             </section>
         )
     }

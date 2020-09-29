@@ -59,10 +59,12 @@ class Contact extends Component {
         return (
             <section className="contact">
 
-                <div>
-                    <h1>Contact Us</h1>
-                    <p>Phone: (608) 501-4742</p>
-                    <p>Email: zenroomgrooming@gmail.com</p>
+                <div className="info">
+                    <div>
+                        <h1>Contact Us</h1>
+                        <p>Phone: (608) 501-4742</p>
+                        <p>Email: zenroomgrooming@gmail.com</p>
+                    </div>
                 </div>
 
                 <form className="contactForm">
@@ -79,7 +81,7 @@ class Contact extends Component {
 
                     <textarea onChange={this.handleMessage} placeholder="Your message here" rows="10"/>
 
-                    <button onClick={this.handleSubmit}>Send Email</button>
+                    <button onClick={this.handleSubmit}>Send Message</button>
                 </form>
             </section>
         )

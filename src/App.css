@@ -155,14 +155,25 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
 }
 
 /*Contact Page Styling*/
-.contact > div {
+.contact {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact > .info > div {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.contact > div > p {
+.contact > .info > div > p {
   text-align: left;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
 }
 
 .contactForm {
@@ -199,7 +210,9 @@ textarea {
 
 .contactForm > button {
   margin-bottom: 25px;
+  width: 150px;
 }
+
 
 /* Mobile CSS */
 
