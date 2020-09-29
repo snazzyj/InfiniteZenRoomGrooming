@@ -7,8 +7,8 @@ class Homepage extends Component {
             <Fragment>
                 <section className="missionStatement">
                     <p> 
-                        We at Infinite Zen Grooming understand that grooming can be a stressful experience for all. 
-                        Our intention is to create a calm “Zen” experience for both you and your fur babies. 
+                        We at <strong>Infinite Zen Room Grooming</strong> understand that grooming can be a stressful experience for all. 
+                        Our intention is to create a calm “<span>Zen</span>” experience for both you and your fur babies. 
                         Through the use of gentle massage, soft relaxation music, calming aromatherapy, and gentle acupressure point relaxation,
                         your pet will experience a grooming session that eases their anxiety and enables them to relax and enjoy the experience.
                         Great communication with you of what is desired and what is possible with your dogs coat is crucial to keep standards high and anxiety low.

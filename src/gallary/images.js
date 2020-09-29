@@ -1,4 +1,7 @@
+import Dog1 from '../assests/dogs/dog1.jpg';
+import Dog2 from '../assests/dogs/dog2.jpg';
 import Dog3 from '../assests/dogs/dog3.jpg';
+import Dog4 from '../assests/dogs/dog4.jpg';
 import Dog5 from '../assests/dogs/dog5.jpg';
 import Dog8 from '../assests/dogs/dog8.jpg';
 import Dog9 from '../assests/dogs/dog9.jpg';
@@ -15,7 +18,19 @@ import Dog24 from '../assests/dogs/dog24.jpg';
 const ImageData = [
     {
         text: 'Default Alt Text',
+        image: Dog1
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog2
+    },
+    {
+        text: 'Default Alt Text',
         image: Dog3
+    },
+    {
+        text: 'Default Alt Text',
+        image: Dog4
     },
     {
         text: 'Default Alt Text',

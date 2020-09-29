@@ -11,6 +11,7 @@ import MobileNav from './nav/mobileNav.js';
 import TabletNav from './nav/tabletNav.js';
 import AdditionalServices from './services/petsitting.js'
 import './App.css';
+import Header from './header/header';
 
 class App extends Component {
 
@@ -52,7 +53,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <header>
+          {/* <header>
             <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
             
           { isTablet ? <TabletNav /> : null }
@@ -62,7 +63,9 @@ class App extends Component {
           { !isMobile && !isTablet ? <Nav /> : null }
 
 
-          </header>
+          </header> */}
+
+          <Header isTablet={isTablet} isMobile={isMobile}/>
           
           <main>
             <Switch>
