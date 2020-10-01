@@ -29,7 +29,7 @@ class About extends Component {
         Jenn Joyce!
         </h1>
         <img src={ProfilePic} alt="Jennifer Joyce" />
-        <div className="container">
+        <div className="aboutContent">
 
           <p>
             As an animal lover of all shapes and sizes, Jenn has years of experience and has developed a passion working with dogs  since she was very young.

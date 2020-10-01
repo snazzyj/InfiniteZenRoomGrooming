@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Logo3 from './assests/images/logo3.png';
 import Homepage from './homepage/homepage.js';
 import About from './about/about.js';
 import Gallary from './gallary/gallary.js';
 import Contact from './contact/contact.js';
 import Grooming from './services/grooming.js';
-import Nav from './nav/nav.js';
-import MobileNav from './nav/mobileNav.js';
-import TabletNav from './nav/tabletNav.js';
 import AdditionalServices from './services/petsitting.js'
 import './App.css';
 import Header from './header/header';

@@ -33,20 +33,27 @@
 /* Mobile Nav Component Styling */
 
 .menuBtn {
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     font-size: 18px;
     padding: 5px 10px;
     background-color: white;
     border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .mobileNav {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     font-size: 24px;
+    position: absolute;
+    top: 32px;
+    background-color: #7993A0;
 }
 
 .mobileNav > a:hover {
@@ -60,4 +67,20 @@
 
 .mobileNav > a > svg, .mobileNav > li > svg {
     margin-left: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+    .tabletNav {
+        text-align: right;
+    }
+
+    .tabletNav > a {
+        min-width: 125px;
+        max-width: 125px;
+        margin-left: auto;
+    }
+
+    .subMenuMobile {
+        min-width: 250px;
+    }
 }

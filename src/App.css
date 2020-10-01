@@ -36,6 +36,7 @@ main {
 header {
   width: 100vw;
   background-color: #7993A0;
+  box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
 }
 
 .subMenu {
@@ -148,7 +149,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
 
 }
 
-.container {
+.aboutContent {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -161,7 +162,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   margin-right: auto;
 }
 
-.contact > .info > div {
+.info > div {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -216,11 +217,11 @@ textarea {
 
 /* Mobile CSS */
 
-@media only screen and (max-width: 1605px) {
+/* @media only screen and (max-width: 1605px) {
   .nav {
     width: 85%;
   }
-}
+} */
 
 @media only screen and (max-width: 1420px ) {
   .nav {
@@ -234,15 +235,9 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .missionStatement {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 900px) {
 
-  .contactForm, .contact > div {
+  .contactForm, .info {
     width: 66%;
   }
   .contactForm > textarea {
@@ -250,35 +245,63 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 740px) {
-  .about > img {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 640px) {
 
-  header > img {
-    float: left;
+  header {
+    max-height: 250px;
+    min-height: 250px;
   }
 
   header > img {
     position: absolute;
     top: 0;
+    float: left;
     left: 0;
   }
 
-  .tabletNav {
-    position: absolute;
-    top: 10px;
-    right: 5px;
+  .logo {
+    margin-top: 0;
+    width: 225px;
+    height: 250px;
   }
 
   main {
-    margin-top: 250px;
+    margin-top: 50px;
     width: 85%;
   }
 
+  .missionStatement {
+    width: 90%;
+  }
+
+  .about > img {
+    width: 90%;
+  }
+
+  .aboutContent {
+    width: 90%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info > div {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+  .dogGrooming, .petService, .links > div > a {
+    width: 260px;
+    height: 190px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -286,12 +309,24 @@ textarea {
     width: 90%;
   }
 
-  header > img {
-    position: relative;
-    float: none; 
-  }
-
   main {
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  header {
+    min-height: 275px;
+  }
+
+  header > img {
+    float: none;
+    position: relative;
+    padding-top: 25px;
+  }
+
+  nav > a {
+    margin: 10px 0;
   }
 }
