@@ -34,7 +34,7 @@ main {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   background-color: #7993A0;
   box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
 }
@@ -91,6 +91,8 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .missionStatement > p > span {
@@ -105,7 +107,12 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   position: relative;
 }
 
-.links > div > a {
+.serviceLinks {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+.serviceLinks > div > a {
   width: 440px;
   height: 350px;
   display: inline-block;
@@ -115,11 +122,11 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   font-weight: bold;
 }
 
-.links > div > a:visited {
+.serviceLinks > div > a:visited {
   color: black;
 }
 
-.links > div > a:hover {
+.serviceLinks > div > a:hover {
   color: black;
 }
 
@@ -217,12 +224,6 @@ textarea {
 
 /* Mobile CSS */
 
-/* @media only screen and (max-width: 1605px) {
-  .nav {
-    width: 85%;
-  }
-} */
-
 @media only screen and (max-width: 1420px ) {
   .nav {
     font-size: 24px;
@@ -298,7 +299,7 @@ textarea {
 }
 
 @media only screen and (max-width: 530px) {
-  .dogGrooming, .petService, .links > div > a {
+  .dogGrooming, .petService, .serviceLinks > div > a {
     width: 260px;
     height: 190px;
   }

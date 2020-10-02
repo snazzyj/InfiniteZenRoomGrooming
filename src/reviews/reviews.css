@@ -1,0 +1,19 @@
+.reviewSection {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    background-color: #7993A0;
+    color: white;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 450px) {
+    .wrapper {
+        width: 80%;
+    }
+}

@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {Link} from 'react-router-dom';
+import Reviews from '../reviews/reviews.js';
 
 class Homepage extends Component {
     render() {
@@ -15,8 +16,11 @@ class Homepage extends Component {
                         Gentle communication with your pet throughout enhances the experience even more.                         
                     </p>
                 </section>
+                
+                <Reviews />
 
-                <section className="links">
+                <section className="serviceLinks">
+                    <h1>Our Services</h1>
                     <div className="dogGrooming">
                         <Link to="/grooming">Pet Grooming</Link>
                     </div>
