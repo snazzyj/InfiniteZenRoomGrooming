@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {Link} from 'react-router-dom';
-import Reviews from '../reviews/reviews.js';
+// import Reviews from '../reviews/reviews.js';
 
 class Homepage extends Component {
     render() {
