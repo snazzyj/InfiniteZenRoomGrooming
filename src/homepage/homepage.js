@@ -17,7 +17,7 @@ class Homepage extends Component {
                     </p>
                 </section>
                 
-                <Reviews />
+                {/* <Reviews /> */}
 
                 <section className="serviceLinks">
                     <h1>Our Services</h1>

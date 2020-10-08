@@ -10,7 +10,8 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    swipe: false
+    swipe: false,
+    
 }
 
 class Reviews extends Component {
