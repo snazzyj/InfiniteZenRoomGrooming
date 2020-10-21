@@ -23,11 +23,12 @@
     display: flex;
     flex-direction: column;
     background-color: #36454d;
-    min-width: 320px;
+    /* min-width: 320px; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    right: 20px;
+    right: 0;
 }
 
 /* Mobile Nav Component Styling */
@@ -54,6 +55,7 @@
     position: absolute;
     top: 32px;
     background-color: #7993A0;
+    line-height: 32px;
 }
 
 .mobileNav > a:hover {
@@ -63,6 +65,7 @@
 
 .mobileNav > a {
     display: block;
+    border-bottom: solid 1px white;
 }
 
 .mobileNav > a > svg, .mobileNav > li > svg {

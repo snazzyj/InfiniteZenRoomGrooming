@@ -6,13 +6,18 @@ class AdditionalServices extends Component {
         return (
             <section className="services">
                 <h1>Pet Care A La Carte Packaging</h1>
+
+                <div className="additionalServices">
+
+                <div className="overnight">
                 <h3>Overnight Stays</h3>
                 <ul>
                     <li>$55 (up to 2 dogs) per night</li>
                     <li>$12 <span>per additional dog</span></li>
 
                     <li>4th dog is free</li>
-                    <li>Overnight stay includes:
+                    <li>
+                        <h4>Includes:</h4>
                         <ul className="subList">
                             <li>2 potties per day</li>
                             <li>Unlimited let outs when I am there</li>
@@ -23,10 +28,10 @@ class AdditionalServices extends Component {
                     </li>
                     <li>$5 for medicating per day</li>
                 </ul>
+                </div>
 
-
+                <div className="petCare">
                 <h3>Additional Pet Care</h3>
-
                 <ul>
                     <li>$8 per Day For The Following Pets:
                         <ul className="subList">
@@ -46,7 +51,7 @@ class AdditionalServices extends Component {
                     </li>
                     <br />
 
-                    <li><strong>Includes:</strong>
+                    <li><h4>Includes:</h4>
                         <ul className="subList">
                             <li>Feeding</li>
                             <li>Watering</li>
@@ -56,13 +61,14 @@ class AdditionalServices extends Component {
                         </ul>
                     </li>
                 </ul>
+                </div>
+                
+                </div>
 
-                <h3>Mileage</h3>
-                <ul>
-                    <li>
-                        <p>$0.55 / Mile outside the Dane County Area.</p>
-                    </li>
-                </ul>
+                <div className="mileage">
+                    <h3>Mileage</h3>
+                    <p>$0.55 / Mile outside the Dane County Area</p>
+                </div>
             </section>
         )
     }

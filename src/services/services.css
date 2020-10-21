@@ -1,28 +1,22 @@
-.services > h3 {
+/* General Styling */
+.services {
+    cursor: default;
+}
+
+.services > h3, .overnight > h3, .petCare > h3, .mileage > h3  {
     text-decoration: underline;
 }
 
-.services > ul > li > span {
-    font-weight: bold;
-}
-
-.services {
-    width: 50%;
-    margin-right: auto;
+/* Grooming Styling */
+.groomingService {
     margin-left: auto;
-    cursor: default;
-}
-  
-.services > ul > li > p {
-  display: inline-block;
+    margin-right: auto;
+    width: 30%;
+    font-size: 16px;
 }
 
 .cost {
-  text-align: right;
-}
-
-.subList > li {
-  list-style-type: disc;
+    text-align: right;
 }
 
 .serviceAndPrice {
@@ -34,39 +28,100 @@
     margin-bottom: 10px;
 }
 
-.groomingService {
+/* Additional Services Styling */
+.additionalServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    font-size: 16px;
+}
+
+.overnight, .petCare {
+    width: 40%;
+    margin: 0 10px;
+}
+
+.overnight > ul, .petCare > ul {
+    padding: 10px;
+}
+
+.overnight > ul > li > h4, .petCare > ul > li > h4 {
+    margin-bottom: 0;
+    color: #027ab6;
+}
+
+.mileage, .overnight {
+    text-align: center;
+}
+
+.petCare > h3 {
+    text-align: center;
+}
+
+.overnight > ul > li > span {
+    font-weight: bold;
+}
+
+.overnight > ul > li, 
+.subList > li {
+    list-style-position: inside;
+    text-align: left;
+}
+
+.subList > li {
+    padding-left: 20px;
+}
+
+.subList > li::before {
+    content: "- ";
 }
 
 /* Mobile CSS */
 
-@media only screen and (max-width: 1605px) {
-    .services {
-        width: 75%;
+@media only screen and (max-width: 1090px) {
+    .overnight, .petCare {
+        width: 60%;
     }
 }
 
-@media only screen and (max-width: 1020px) {
-    .services {
+@media only screen and (max-width: 1024px) {
+    .groomingService {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .groomingService {
+        width: 65%;
+    }
+
+    .overnight, .petCare {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .overnight, .petCare {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 530px) {
-
     .groomingService {
         width: 90%
     }
 
+    .additionalServices {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-
     .groomingService {
         width: 100%;
     }
-    
 }

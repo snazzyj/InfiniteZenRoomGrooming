@@ -36,11 +36,13 @@
 
 .closeOutBtn {
     width: 25px;
-    padding-right: 5px;
     border: none;
     font-size: 20px;
     background-color: rgb(185, 184, 184);
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* float: right; */
 }
 
 .closeOutBtn:hover {
