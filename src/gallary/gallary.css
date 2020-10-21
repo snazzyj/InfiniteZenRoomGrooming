@@ -18,7 +18,7 @@
 .dogPhotos {
     margin: 10px 10px;
     border: 1px solid black;
-    max-width: 250px;
+    /* max-width: 250px; */
     max-height: 300px;
     width: auto;
     height: auto;
