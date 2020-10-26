@@ -1,5 +1,5 @@
 # Infinite Zen Room Grooming
-### [Live](https://https://infinitegroom.now.sh/)
+### [Live](https://izrgrooming.com)
 
 ## About Infinite Zen Room Grooming
 Infinite Zen Room Grooming is a Pet Grooming business based in Madison, WI. We offer a wide range of grooming services for both dogs and cats along with additional pet services for owners with other animals.    
