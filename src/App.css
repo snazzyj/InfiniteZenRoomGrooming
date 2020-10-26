@@ -149,11 +149,20 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   text-align: center;
 }
 
-.about > img {
+.profilePic {
   display: block;
+  float: left;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 10px;
+}
 
+.selfiePic {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
 }
 
 .aboutContent {
