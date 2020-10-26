@@ -12,7 +12,7 @@ Infinite Zen Room Grooming is a Pet Grooming business based in Madison, WI. We o
 ![alt text](https://github.com/snazzyj/InfiniteZenRoomGrooming/blob/master/src/assests/screenshots/about.png)
 
 **Gallery**
-![alt text](https://github.com/snazzyj/InfiniteZenRoomGrooming/blob/master/src/assests/screenshots/gallery.jpg)
+![alt text](https://github.com/snazzyj/InfiniteZenRoomGrooming/blob/master/src/assests/screenshots/gallery.png)
 
 **Contact**
 ![alt text](https://github.com/snazzyj/InfiniteZenRoomGrooming/blob/master/src/assests/screenshots/contact.png)
@@ -26,6 +26,5 @@ Infinite Zen Room Grooming is a Pet Grooming business based in Madison, WI. We o
 ## Built With
 1. React
 2. Javascript
-3. HTML
-4. CSS
-5. EmailJs
+3. CSS
+4. EmailJs
