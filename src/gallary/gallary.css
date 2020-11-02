@@ -28,3 +28,15 @@
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 1px 1px 1px rgba(0,0,0,0); 
 box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 1px 1px 1px rgba(0,0,0,0);
 }
+
+@media only screen and (max-width: 555px) {
+    .dogPhotos {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .dogPhotos {
+        max-width: 300px;
+    }
+}
