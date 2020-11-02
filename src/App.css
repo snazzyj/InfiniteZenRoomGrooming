@@ -316,6 +316,7 @@ textarea {
 
 }
 
+/*Mobile Styling*/
 @media only screen and (max-width: 530px) {
   .dogGrooming, .petService, .serviceLinks > div > a {
     width: 260px;
@@ -353,5 +354,8 @@ textarea {
 @media only screen and (max-width: 400px) {
   .aboutContent {
     width: 100%;
+  }
+  main {
+    width: 90%;
   }
 }
