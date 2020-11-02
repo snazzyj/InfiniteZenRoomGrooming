@@ -3,15 +3,22 @@
     cursor: default;
 }
 
-.services > h3, .overnight > h3, .petCare > h3, .mileage > h3  {
+.overnight > h3, .petCare > h3, .mileage > h3  {
     text-decoration: underline;
 }
 
 /* Grooming Styling */
+.groomingService > h2 {
+    width: 100%;
+    background-color: #7993A0;
+    padding: 10px 0;
+    text-align: center;
+}
+
 .groomingService {
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 40%;
     font-size: 16px;
 }
 
@@ -82,6 +89,12 @@
 
 /* Mobile CSS */
 
+@media only screen and (max-width: 1200px) {
+    .groomingService {
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 1090px) {
     .overnight, .petCare {
         width: 60%;
@@ -96,7 +109,7 @@
 
 @media only screen and (max-width: 768px) {
     .groomingService {
-        width: 65%;
+        width: 70%;
     }
 
     .overnight, .petCare {
@@ -120,7 +133,7 @@
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
     .groomingService {
         width: 100%;
     }

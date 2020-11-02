@@ -4,6 +4,25 @@ import './services.css';
 
 const services = [
     {
+        serviceName: 'Bath And Blow Dry (Cut Included)*',
+        price: '$20-$90',
+    },
+    {
+        serviceName: 'Blowout (Cut if necessary)',
+        price: '$50-$95',
+    },
+    {
+        serviceName: 'Brush',
+        price: '$10-$25',
+    },
+    {
+        serviceName: 'Massage included during Bath',
+        price: ''
+    }
+]
+
+const addOns = [
+    {
         serviceName: 'Nail Trim',
         price: '$12'
     },
@@ -14,22 +33,6 @@ const services = [
     {
         serviceName: 'A La Carte CBD Oil',
         price: '$6',
-    },
-    {
-        serviceName: 'Bath And Blow Dry*',
-        price: '$20-$90',
-    },
-    {
-        serviceName: 'Blowout',
-        price: '$50-$95',
-    },
-    {
-        serviceName: 'Brush',
-        price: '$10-$25',
-    },
-    {
-        serviceName: 'Massage included during Bath',
-        price: ''
     }
 ]
 
@@ -43,11 +46,12 @@ class Grooming extends Component {
                 : ""
                 }
                 <section className="services">
-                    <h2>Providing The Best Care For Your Best Friends</h2>
+                    <h3>Providing The Best Care For Your Best Friends</h3>
 
-                    <h3>Grooming Services Available</h3>
 
                     <div className="groomingService">
+
+                    <h2>Grooming Services</h2>
 
                         {services.map((service, index) => {
                             return (
@@ -61,10 +65,24 @@ class Grooming extends Component {
                                 </div>
                             )
                         })}
-
                         <p>*Note: Grooming costs will vary depending on your pet’s breed and coat condition</p>
                         <p>** Bath and Blow Dry for Short hair and smaller breeds</p>
                         <p>*** Blowout for Double coated and large breeds</p>
+
+                        <h2>Add Ons</h2>
+                        {addOns.map((addon, index) => {
+                            return (
+                                <div className="serviceAndPrice" key={index}>
+                                <div>
+                                    {addon.serviceName}
+                                </div>
+                                <div>
+                                    {addon.price}
+                                </div>
+                            </div> 
+                            )
+                        })}
+
 
                         <div className="mileage">
                             <h3>Mileage</h3>
