@@ -8,7 +8,7 @@
 }
 
 /* Grooming Styling */
-.groomingService > h2 {
+.groomingService > h2, .petCare > h2, .overnight > h2 {
     width: 100%;
     background-color: #7993A0;
     padding: 10px 0;
@@ -38,7 +38,7 @@
 /* Additional Services Styling */
 .additionalServices {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -65,7 +65,7 @@
     text-align: center;
 }
 
-.petCare > h3 {
+.petCare > h2 {
     text-align: center;
 }
 
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width: 1090px) {
     .overnight, .petCare {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -113,7 +113,7 @@
     }
 
     .overnight, .petCare {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -130,5 +130,9 @@
 
     .additionalServices {
         width: 100%;
+    }
+
+    .petCare > ul, .overnight > ul {
+        padding: 0;
     }
 }

@@ -202,7 +202,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
-  width: 35%;
+  width: 45%;
 }
 
 .aboutContent {
@@ -289,9 +289,19 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 1240px) {
+  .aboutContent {
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
-  .selfiePic, .aboutContent {
+  .selfiePic {
     width: 60%;
+  }
+
+  .aboutContent {
+    width: 70%;
   }
 
   .petService, .dogGrooming {
@@ -315,7 +325,7 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  .selfiePic, .aboutContent {
+  .selfiePic {
     width: 60%;
   }
 }
@@ -323,8 +333,8 @@ textarea {
 @media only screen and (max-width: 640px) {
 
   header {
-    max-height: 250px;
-    min-height: 250px;
+    max-height: 200px;
+    min-height: 200px;
   }
 
   header > img {
@@ -336,8 +346,8 @@ textarea {
 
   .logo {
     margin-top: 0;
-    width: 225px;
-    height: 250px;
+    width: 175px;
+    height: 200px;
   }
 
   main {
@@ -392,7 +402,8 @@ textarea {
 @media only screen and (max-width: 450px) {
 
   header {
-    min-height: 275px;
+    max-height: 231px;
+    min-height: 231px;
   }
 
   header > img {
