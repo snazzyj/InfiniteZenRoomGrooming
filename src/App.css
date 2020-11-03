@@ -412,7 +412,11 @@ textarea {
 
 @media only screen and (max-width: 400px) {
   .aboutContent {
-    width: 100%;
+    width: 90%;
+  }
+
+  .selfiePic {
+    float: none;
   }
   main {
     width: 100%;
