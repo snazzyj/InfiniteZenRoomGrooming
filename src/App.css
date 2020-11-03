@@ -28,9 +28,9 @@ main {
 }
 
 .logo {
-  width: 300px;
-  height: 325px;
-  margin-top: 50px;
+  width: 250px;
+  height: 275px;
+  margin-top: 30px;
 }
 
 header {
@@ -73,26 +73,33 @@ nav > a, .subMenu > a, .services > ul > li, .menu, .subMenuMobile > a {
   text-decoration: none;
 }
 
-nav > a:link, .subMenu > a:link, .subMenuMobile > a:link {
+nav > a:link, .subMenu > a:link, .subMenuMobile > a:link, .homepageAbout > div > a:link {
   color: white;
 }
 
-nav > a:visited, .subMenu > a:visited, .subMenuMobile > a:visited {
+nav > a:visited, .subMenu > a:visited, .subMenuMobile > a:visited, .homepageAbout > div > a:visited {
   color: white;
 }
 
-nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
+nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > div > a:hover {
   color: #f5d000;
 }
 
 /*Homepage Content Styling*/
 .missionStatement {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  position: relative;
+}
+
+.missionStatement > p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .missionStatement > p > span {
@@ -103,13 +110,12 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   width: 440px;
   height: 350px;
   display: inline-block;
-  margin: 10px;
+  margin: 0 50px;
   position: relative;
 }
 
-.serviceLinks {
-  margin-top: 100px;
-  margin-bottom: 75px;
+.serviceLinks > h1 {
+  text-align: center;
 }
 
 .serviceLinks > div > a {
@@ -140,7 +146,48 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   background-size: contain;
 }
 
+.homepageAbout {
+  width: 100%;
+  overflow: auto;
+  background-color: #7993A0;
+  padding-bottom: 50px;
+}
+
+.homepageAbout > div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepageAbout > div > p {
+  text-align: left;
+  margin-top: 0;
+  line-height: 1.75em;
+}
+
+.homepageAbout > div > h1 {
+  margin-top: 0;
+}
+
+.profilePic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  width: 50%;
+  clear: right;
+  float: left;
+}
+
+
 /*General Styling for About, Services Headers*/
+.about {
+  margin: 10px 0;
+  /* background-color: #7993A0; */
+  height: 100%;
+  padding-bottom: 50px;
+}
+
 .about, .services {
   text-align: left;
 }
@@ -149,22 +196,13 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover {
   text-align: center;
 }
 
-.profilePic {
-  display: block;
-  /* float: left; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 10px;
-  width: 60%;
-}
-
 .selfiePic {
   display: block;
   float: right;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
-  width: 50%;
+  width: 35%;
 }
 
 .aboutContent {
@@ -236,16 +274,30 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1302px) {
   .missionStatement {
+    width: 75%;
+  }
+
+  .missionStatement > p {
+    width: 100%;
+  }
+
+  .profilePic {
+    float: none;
     width: 75%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .profilePic, .selfiePic, .aboutContent {
+  .selfiePic, .aboutContent {
     width: 60%;
   }
+
+  .petService, .dogGrooming {
+    margin: 0 25px;
+  }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -256,10 +308,14 @@ textarea {
   .contactForm > textarea {
     width: 90%;
   }
+
+  .homepageAbout > div  {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .profilePic, .selfiePic, .aboutContent {
+  .selfiePic, .aboutContent {
     width: 60%;
   }
 }
@@ -286,7 +342,6 @@ textarea {
 
   main {
     margin-top: 50px;
-    width: 85%;
   }
 
   .missionStatement {
@@ -349,6 +404,10 @@ textarea {
   nav > a {
     margin: 10px 0;
   }
+
+  .profilePic {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -356,6 +415,14 @@ textarea {
     width: 100%;
   }
   main {
-    width: 90%;
+    width: 100%;
+  }
+
+  .missionStatement > p {
+    width: 100%;
+  }
+
+  .dogGrooming, .petService {
+    margin: 0;
   }
 }
