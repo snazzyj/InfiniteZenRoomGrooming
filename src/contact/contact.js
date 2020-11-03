@@ -74,10 +74,10 @@ class Contact extends Component {
                         <input type="text" name="name" required onChange={this.handleName} />
                     </label>
                     <label htmlFor="email">Email
-                        <input type="text" name="email" required onChange={this.handleEmail} />
+                        <input type="email" name="email" required onChange={this.handleEmail} />
                     </label>
                     <label htmlFor="phone">Phone
-                        <input type="phone" name="phone" required onChange={this.handlePhone} />
+                        <input type="tel" name="phone" required onChange={this.handlePhone} />
                     </label>
 
                     <textarea onChange={this.handleMessage} placeholder="Your message here" rows="10"/>
