@@ -56,6 +56,7 @@ class Contact extends Component {
     }
 
     render() {
+        const {cust_email, cust_name, cust_phone, message} = this.state;
         return (
             <section className="contact">
 
@@ -81,7 +82,7 @@ class Contact extends Component {
 
                     <textarea onChange={this.handleMessage} placeholder="Your message here" rows="10"/>
 
-                    <button onClick={this.handleSubmit}>Send Message</button>
+                    <button onClick={this.handleSubmit} type="submit" disabled={!cust_email && !cust_name && !cust_phone && !message}>Send Message</button>
                 </form>
             </section>
         )
