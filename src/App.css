@@ -28,8 +28,8 @@ main {
 }
 
 .logo {
-  width: 250px;
-  height: 275px;
+  width: 200px;
+  height: 225px;
   margin-top: 30px;
 }
 
@@ -56,7 +56,7 @@ header {
   position: absolute;
   top: 0;
   margin-top: auto;
-  font-size: 26px;
+  font-size: 22px;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -40,6 +40,10 @@ class Nav extends Component {
               Contact
           </Link>
             <FontAwesomeIcon icon={faPaw} size="xs" />
+          <Link to="/reviews">
+            Reviews
+          </Link>
+            <FontAwesomeIcon icon={faPaw} size="xs" />
           <li className="menu" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
             Services
             {isHovered 

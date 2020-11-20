@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import ProfilePic from '../assests/images/profile.png';
-// import Reviews from '../reviews/reviews.js';
+import HomepageReviews from '../reviews/homepage-reviews.js';
 
 class Homepage extends Component {
     render() {
@@ -17,7 +17,6 @@ class Homepage extends Component {
                         Gentle communication with your pet throughout enhances the experience even more.
                     </p>
                 </section>
-                {/* <Reviews /> */}
                 <section className="homepageAbout">
                         <h1>Meet Jenn Joyce</h1>
                     <div>
@@ -37,8 +36,9 @@ class Homepage extends Component {
                     <div className="petService">
                         <Link to="/additionalservices">Pet Services</Link>
                     </div>
-                    <p>Call (608) 501-4742 to schedule an appointment today!</p>
+                    <p>Call <strong>(608) 501-4742</strong> to schedule an appointment today!</p>
                 </section>
+                <HomepageReviews />
             </Fragment>
         )
     }

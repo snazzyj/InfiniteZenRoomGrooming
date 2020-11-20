@@ -1,36 +1,22 @@
 import React, { Component } from 'react';
 import ReviewBank from './review_bank.js';
-import Slider from 'react-slick';
 import './reviews.css';
-
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    swipe: false,
-    
-}
 
 class Reviews extends Component {
     render() {
         return (
             <section className="reviewSection">
                 <div className="wrapper">
-                    <h1>Client Reviews</h1>
-                    <Slider {...settings}>
-                        {ReviewBank.map((review, idx) => {
-                            console.log(review)
+                    <h1>Zen Roomers Reviews</h1>
+                    {ReviewBank.map((review, idx) => {
                             return (
-                                <div key={idx}>
-                                    <p className="clientMessage">" {review.message} "</p>
-                                    <p className="clientName">{review.name}</p>
+                                <div key={idx} className="cl_review">
+                                    <p className="clientMessage">"{review.message}"</p>
+                                    <p className="clientName">-{review.name}</p>
+                                    <span className="border-line"></span>
                                 </div>
                             )
-                        })}
-                    </Slider>
+                        })} 
                 </div>
             </section>
         )

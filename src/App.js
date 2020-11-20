@@ -4,6 +4,7 @@ import Homepage from './homepage/homepage.js';
 import About from './about/about.js';
 import Gallary from './gallary/gallary.js';
 import Contact from './contact/contact.js';
+import Reviews from './reviews/reviews.js';
 import Grooming from './services/grooming.js';
 import AdditionalServices from './services/petsitting.js'
 import './App.css';
@@ -58,6 +59,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/gallary" component={Gallary} />
               <Route path="/contact" component={Contact} />
+              <Route path="/reviews" component={Reviews} />
               <Route path="/grooming" render={(props) => <Grooming closePopUp={this.closePopUp} popUpActive={popUpActive}/>} />
               <Route path="/additionalservices" component={AdditionalServices} />
             </Switch>

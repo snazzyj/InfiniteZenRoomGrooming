@@ -65,6 +65,10 @@ class mobileNav extends Component {
             Contact
                     <FontAwesomeIcon icon={faPaw} size="xs" />
           </Link>
+          <Link to="/reviews">
+            Reviews
+          <FontAwesomeIcon icon={faPaw} size="xs" />
+          </Link>
           <li className="menu" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
             Services
             <FontAwesomeIcon icon={faPaw} size="xs" />
