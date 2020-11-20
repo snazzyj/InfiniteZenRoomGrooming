@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Homepage from './homepage/homepage.js';
 import About from './about/about.js';
-import Gallary from './gallary/gallary.js';
+import Gallery from './gallery/gallery.js';
 import Contact from './contact/contact.js';
 import Reviews from './reviews/reviews.js';
 import Grooming from './services/grooming.js';
@@ -57,7 +57,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route path="/about" component={About} />
-              <Route path="/gallary" component={Gallary} />
+              <Route path="/gallary" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/reviews" component={Reviews} />
               <Route path="/grooming" render={(props) => <Grooming closePopUp={this.closePopUp} popUpActive={popUpActive}/>} />
