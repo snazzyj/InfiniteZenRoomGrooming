@@ -38,6 +38,10 @@ const Homepage_User_Reviews = [
         message: `Jenn has been our groomer for close to two years now. We have a Great Pyrenees and Jenn has been the only groomer for Ellie. 
         The bond that they have is so amazing, and every groom is perfect. She's even helped with our other two large dogs, both Doberman/Shepherd mixes. 
         The attention to detail and compassion that Jenn has are just a few reasons why we will continue to go to Jenn for all of our grooming needs.`
+    },
+    {
+        name: 'Kate',
+        message: `Jenn is the best! Her gentle disposition and CBD option keep my crazy dogs calm. and the finished results are amazing. AND she comes to You!`
     }
 ]
 

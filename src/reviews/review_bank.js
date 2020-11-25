@@ -43,6 +43,10 @@ const User_Reviews = [
          What I love the best is that she will come to your home to groom and doggie sit. If you have a nervous dogs she keeps your pups at home feeling safe. 
          My lil Pom is very nervous and she’s able to keep him calm and does an amazing job on making his coat look nice and fluffy. 
          She also offers cbd for dogs to keep them calm during their session. I wouldn’t trust my dogs with anyone else. Highly recommend!`
+    },
+    {
+        name: 'Kate',
+        message: `Jenn is the best! Her gentle disposition and CBD option keep my crazy dogs calm. and the finished results are amazing. AND she comes to You!`
     }
 ]
 
