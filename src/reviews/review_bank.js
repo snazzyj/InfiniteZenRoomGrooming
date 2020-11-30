@@ -47,6 +47,16 @@ const User_Reviews = [
     {
         name: 'Kate',
         message: `Jenn is the best! Her gentle disposition and CBD option keep my crazy dogs calm. and the finished results are amazing. AND she comes to You!`
+    },
+    {
+        name: 'Krystal',
+        message: `Jenn is exactly what our dogs needed in their lives!  We have Zoey, a chunky little 7yr old pittie and Jet, a 2yr old rottie.  
+        They don't get hair cuts but she has turned our nail trimming stressfests into a breeze and we ALL could not be more thankful.  
+        When we started, Zoey was a struggle to even clip and Jet would run for the door as soon as he saw the clippers.  
+        The very first visit Jenn was able to use a dremil on Zoey!  She had some tricks for getting Jet to relax and now a year later, 
+        he will give me his paw on command and let me clip his nails!  She is like a nervous-dog whisperer.  
+        I don't know what it is, she soothes them at the same time she's asserting so much confidence.  
+        They just fall into line for her and trust her.`
     }
 ]
 
