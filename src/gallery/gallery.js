@@ -10,7 +10,7 @@ class Gallary extends Component {
                 <div className="gallary">
                     {ImageData.map((img, index) => {
                         return (
-                            <img src={img.image} alt={img.text} key={index} className="dogPhotos"/>
+                                <img src={img.image} alt={img.text} key={index} className="dogPhotos"/>
                         )
                     })}
                 </div> 
