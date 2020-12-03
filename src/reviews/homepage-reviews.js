@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import PawPrint from '../assests/images/paw_print.png';
 import './reviews.css';
 
 const settings = {
@@ -51,12 +50,6 @@ class HomepageReviews extends Component {
     render() {
         return (
             <section className="homepageReviews">
-                    {/* <div className="pawprint_reviews_left">
-                        <img src={PawPrint} alt="paw prints" className="paw_prints" />
-                    </div>
-                    <div className="pawprint_reviews_right">
-                        <img src={PawPrint} alt="paw prints" className="paw_prints" />
-                    </div> */}
                 <div className="wrapper">
                     <h1>Client Reviews</h1>
                     <Slider {...settings}>

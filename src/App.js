@@ -7,12 +7,9 @@ import Contact from './contact/contact.js';
 import Reviews from './reviews/reviews.js';
 import Grooming from './services/grooming.js';
 import Nav from './nav/nav';
-import TabletNav from './nav/tabletNav';
 import MobileNav from './nav/mobileNav';
 import AdditionalServices from './services/petsitting.js';
-import PawPrint from './assests/images/paw_print.png';
 import './App.css';
-import Header from './header/header';
 
 class App extends Component {
 
@@ -26,15 +23,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // let tabletMediaQuery = window.matchMedia('(max-width: 845px)');
     let mobileMediaQuery = window.matchMedia('(max-width: 850px)');
 
-    // if (tabletMediaQuery.matches) {
-    //   this.setState({
-    //     isTablet: true,
-    //     isMobile: false
-    //   })
-    // }
     if (mobileMediaQuery.matches) {
       this.setState({
         isTablet: false,
@@ -50,14 +40,13 @@ class App extends Component {
   }
 
   render() {
-    const { isTablet, isMobile, popUpActive } = this.state;
+    const { isMobile, popUpActive } = this.state;
     return (
       <div className="App">
         <BrowserRouter>
 
-          {isMobile ? <MobileNav /> : null}
-          {isTablet ? <TabletNav /> : null}
-          {!isMobile && !isTablet ? <Nav /> : null}
+          {isMobile ? <MobileNav /> : <Nav />}
+          {/* {!isMobile ? <Nav /> : null} */}
 
           <main>
             <Switch>
