@@ -3,8 +3,15 @@
 .App {
   text-align: center;
   font-size: 18px;
-  /* height: 100%; */
 }
+
+/* main > div {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: white;
+} */
 
 li {
   list-style-type: none;
@@ -18,19 +25,21 @@ ul {
 
 /*Header*/
 main {
-  /* width: 100vw; */
-  width: 100%;
+  /* background-image: url('../src/assests/images/paw_print.png');
+  background-repeat: repeat;
+  background-size: 500px 500px; */
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
-  /* height: 100%; */
-  background-color: white;
   color: black;
+  background-color: white;
 }
 
 .logo {
   width: 200px;
   height: 225px;
-  margin-top: 30px;
+  float: left;
+  clear: right;
 }
 
 header {
@@ -43,7 +52,10 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
+  right: 1px;
   background-color: #36454d;
+  min-width: 250px;
+  z-index: 1;
 }
 
 .hidden {
@@ -60,28 +72,40 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
+  min-height: 60px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px white solid;
+  background-color: #3a515c;
 }
 
-nav > a, .subMenu > a, .services > ul > li, .menu, .subMenuMobile > a {
+.nav > h4 {
+  position: absolute;
+  left: 0;
+  margin: 0;
+}
+
+nav > a {
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.subMenu > a, .services > ul > li, .menu, .subMenuMobile > a, nav > svg, .nav > h4 > a {
   margin: 0 5px;
   padding: 0 5px;
   text-decoration: none;
 }
 
-nav > a:link, .subMenu > a:link, .subMenuMobile > a:link, .homepageAbout > div > a:link {
+nav > a:link, .subMenu > a:link, .subMenuMobile > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {
   color: white;
 }
 
-nav > a:visited, .subMenu > a:visited, .subMenuMobile > a:visited, .homepageAbout > div > a:visited {
+nav > a:visited, .subMenu > a:visited, .subMenuMobile > a:visited, .homepageAbout > div > a:visited,  .nav > h4 > a:visited {
   color: white;
 }
 
-nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > div > a:hover {
+nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > a:hover {
   color: #f5d000;
 }
 
@@ -90,19 +114,28 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
-  margin-top: 75px;
+  margin-top: 60px;
   margin-bottom: 75px;
+  padding-top: 40px;
   position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
 }
 
-.missionStatement > p {
-  width: 50%;
+.missionStatement > div {
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 
-.missionStatement > p > span {
+.missionStatement > div > p {
+  text-align: left;
+}
+
+.missionStatement > div > p > span {
   font-style: italic;
 }
 
@@ -154,7 +187,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
 }
 
 .homepageAbout > div {
-  width: 50%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -175,17 +208,17 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
   margin-right: auto;
   padding-right: 10px;
   width: 50%;
-  clear: right;
-  float: left;
+  clear: left;
+  float: right;
 }
 
 
 /*General Styling for About, Services Headers*/
 .about {
-  margin: 10px 0;
-  /* background-color: #7993A0; */
-  height: 100%;
+  margin-top: 75px;
   padding-bottom: 50px;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .about, .services {
@@ -206,16 +239,18 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
 }
 
 .aboutContent {
-  width: 50%;
+  /* width: %; */
   margin-left: auto;
   margin-right: auto;
 }
 
 /*Contact Page Styling*/
 .contact {
-  width: 75%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 75px;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .info > div {
@@ -268,21 +303,20 @@ textarea {
 
 /* Mobile CSS */
 
-@media only screen and (max-width: 1420px ) {
+/* @media only screen and (max-width: 1500px) {
+  .missionStatement > div {
+    width: 75%;
+  }
+} */
+
+@media only screen and (max-width: 1440px ) {
+  
   .nav {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 1302px) {
-  .missionStatement {
-    width: 75%;
-  }
-
-  .missionStatement > p {
-    width: 100%;
-  }
-
   .profilePic {
     float: none;
     width: 75%;
@@ -290,8 +324,26 @@ textarea {
 }
 
 @media only screen and (max-width: 1240px) {
+  .missionStatement > div {
+    width: 75%;
+  }
+
   .aboutContent {
     width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  nav > a, .menu {
+    font-size: 18px;
+  }
+
+  nav > a, .menu {
+    padding: 0 2px;
+  }
+
+  nav > svg {
+    margin: 0 2px;
   }
 }
 
@@ -307,10 +359,13 @@ textarea {
   .petService, .dogGrooming {
     margin: 0 25px;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
+
+  main {
+    margin-left: 0;
+  }
 
   .contactForm, .info {
     width: 66%;
@@ -325,16 +380,19 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
+
+  main {
+    width: 100%;
+  }
+
   .selfiePic {
     width: 60%;
   }
 }
  
 @media only screen and (max-width: 640px) {
-
   header {
-    max-height: 200px;
-    min-height: 200px;
+    box-shadow: none;
   }
 
   header > img {
@@ -390,6 +448,11 @@ textarea {
 }
 
 @media only screen and (max-width: 500px) {
+
+  .missionStatement > div > img {
+    float: none;
+  }
+
   .contact > div, .contactForm {
     width: 90%;
   }

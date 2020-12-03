@@ -12,9 +12,9 @@ class Header extends Component {
             <Fragment>
                 <header className="header">
                     <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
-                    {isMobile ? <MobileNav /> : null}
+                    {/* {isMobile ? <MobileNav /> : null}
                     {isTablet ? <TabletNav /> : null}
-                    {!isMobile && !isTablet ? <Nav /> : null}
+                    {!isMobile && !isTablet ? <Nav /> : null} */}
                 </header>
             </Fragment>
         )

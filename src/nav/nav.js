@@ -5,8 +5,8 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons';
 
 class Nav extends Component {
 
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             isHovered: false
         }
@@ -23,10 +23,11 @@ class Nav extends Component {
 
         return (
             <nav className="nav">
-            <FontAwesomeIcon icon={faPaw} size="xs" />
+              <h4><Link to="/">Infinite Zen Room Grooming</Link></h4>
+            {/* <FontAwesomeIcon icon={faPaw} size="xs" />
           <Link to="/">
               Home
-          </Link>
+          </Link> */}
             <FontAwesomeIcon icon={faPaw} size="xs" />
           <Link to="/about">
               About

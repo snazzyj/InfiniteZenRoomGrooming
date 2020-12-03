@@ -63,12 +63,12 @@ class AdditionalServices extends Component {
                 </ul>
                 </div>
                 
-                </div>
-
                 <div className="mileage">
                     <h3>Mileage</h3>
                     <p>$0.55 / Mile outside the Dane County Area</p>
                 </div>
+                </div>
+
             </section>
         )
     }

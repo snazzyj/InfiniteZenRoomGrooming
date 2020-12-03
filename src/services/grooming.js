@@ -5,11 +5,11 @@ import './services.css';
 const services = [
     {
         serviceName: 'Bath And Blow Dry (Cut Included)*',
-        price: '$20-$90',
+        price: '$20-$100',
     },
     {
         serviceName: 'Blowout (Cut if necessary)',
-        price: '$50-$95',
+        price: '$50-$105',
     },
     {
         serviceName: 'Brush',

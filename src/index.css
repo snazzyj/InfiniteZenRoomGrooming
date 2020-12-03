@@ -13,6 +13,9 @@ body {
   background-color: white;
   color: white;
   overflow-x: hidden;
+  background-image: url('../src/assests/images/paw_print.png');
+  background-repeat: repeat;
+  background-size: 275px 500px;
 }
 
 code {

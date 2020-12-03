@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Logo3 from '../assests/images/logo3.png';
 import ProfilePic from '../assests/images/profile.png';
 import HomepageReviews from '../reviews/homepage-reviews.js';
 
@@ -8,17 +9,24 @@ class Homepage extends Component {
         return (
             <Fragment>
                 <section className="missionStatement">
-                    <p>
-                        We at <strong>Infinite Zen Room Grooming</strong> understand that grooming can be a stressful experience for all.
+                    <div>
+
+                        <img className="logo" src={Logo3} alt="Infinite Zen Room Grooming" />
+
+                        <p>
+                            We at <strong>Infinite Zen Room Grooming</strong> understand that grooming can be a stressful experience for all.
                         Our intention is to create a calm “<span>Zen</span>” experience for both you and your fur babies.
                         Through the use of gentle massage, soft relaxation music, calming aromatherapy, and gentle acupressure point relaxation,
                         your pet will experience a grooming session that eases their anxiety and enables them to relax and enjoy the experience.
                         Great communication with you of what is desired and what is possible with your dogs coat is crucial to keep standards high and anxiety low.
                         Gentle communication with your pet throughout enhances the experience even more.
-                    </p>
+                        </p>
+
+                    </div>
                 </section>
                 <section className="homepageAbout">
-                        <h1>Meet Jenn Joyce</h1>
+
+                    <h1>Meet Jenn Joyce</h1>
                     <div>
                         <img src={ProfilePic} alt="Jennifer Joyce" className="profilePic" />
                         <p>

@@ -6,7 +6,11 @@ import Gallery from './gallery/gallery.js';
 import Contact from './contact/contact.js';
 import Reviews from './reviews/reviews.js';
 import Grooming from './services/grooming.js';
-import AdditionalServices from './services/petsitting.js'
+import Nav from './nav/nav';
+import TabletNav from './nav/tabletNav';
+import MobileNav from './nav/mobileNav';
+import AdditionalServices from './services/petsitting.js';
+import PawPrint from './assests/images/paw_print.png';
 import './App.css';
 import Header from './header/header';
 
@@ -22,15 +26,15 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let tabletMediaQuery = window.matchMedia('(max-width: 640px)');
-    let mobileMediaQuery = window.matchMedia('(max-width: 450px)');
+    // let tabletMediaQuery = window.matchMedia('(max-width: 845px)');
+    let mobileMediaQuery = window.matchMedia('(max-width: 850px)');
 
-    if(tabletMediaQuery.matches) {
-      this.setState({
-        isTablet: true,
-        isMobile: false
-      })
-    } 
+    // if (tabletMediaQuery.matches) {
+    //   this.setState({
+    //     isTablet: true,
+    //     isMobile: false
+    //   })
+    // }
     if (mobileMediaQuery.matches) {
       this.setState({
         isTablet: false,
@@ -46,13 +50,15 @@ class App extends Component {
   }
 
   render() {
-    const {isTablet, isMobile, popUpActive} = this.state;
+    const { isTablet, isMobile, popUpActive } = this.state;
     return (
       <div className="App">
         <BrowserRouter>
 
-          <Header isTablet={isTablet} isMobile={isMobile}/>
-          
+          {isMobile ? <MobileNav /> : null}
+          {isTablet ? <TabletNav /> : null}
+          {!isMobile && !isTablet ? <Nav /> : null}
+
           <main>
             <Switch>
               <Route exact path="/" component={Homepage} />
@@ -60,7 +66,7 @@ class App extends Component {
               <Route path="/gallary" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/reviews" component={Reviews} />
-              <Route path="/grooming" render={(props) => <Grooming closePopUp={this.closePopUp} popUpActive={popUpActive}/>} />
+              <Route path="/grooming" render={(props) => <Grooming closePopUp={this.closePopUp} popUpActive={popUpActive} />} />
               <Route path="/additionalservices" component={AdditionalServices} />
             </Switch>
           </main>

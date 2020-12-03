@@ -50,6 +50,7 @@ class Contact extends Component {
                                  alert('Message has been sent!')
                              }
                          }, (error) => {
+                             console.log(error)
                              alert('An error occured')
                          })
 
