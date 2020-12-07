@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
-import Slider from 'react-slick';
 import './reviews.css';
-
-const settings = {
-    dots: true,
-    infinite: true,
-    fade: true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    swipe: false,
-    adaptiveHeight: true,
-}
 
 const Homepage_User_Reviews = [
     {
         name: "Erica",
         message: `Jenn is AMAZING she has been grooming Babe for the past 4 years.  
-                    She is gentle and patient with my pup as she is getting up there in age.  
-                    My dog is always excited to see Jenn.  Our whole family loves her sparkling personality. 
-                    We highly recommended Zen Room Grooming`
+        She is gentle and patient with my pup as she is getting up there in age.  
+        My dog is always excited to see Jenn.  Our whole family loves her sparkling personality. 
+        We highly recommended Zen Room Grooming`
     },
     {
         name: "Kate",
@@ -47,21 +34,59 @@ const Homepage_User_Reviews = [
 ]
 
 class HomepageReviews extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            currentIndex: 0,
+            intervalId: null,
+        }
+    }
+
+    componentDidMount() {
+        let interval = setInterval(this.changeIndex, 8000);
+        this.setState({intervalId: interval});
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.state.intervalId);
+    }
+
+    renderReview = () => {
+        const {currentIndex} = this.state;
+
+        return (
+                <div>
+                    <p>
+                        {Homepage_User_Reviews[currentIndex].message}
+                    </p>
+                    <p>
+                        -{Homepage_User_Reviews[currentIndex].name}
+                    </p>
+                </div>
+            )
+    }
+
+    changeIndex = () => {
+        const {currentIndex} = this.state;
+
+        if(currentIndex + 1 >= Homepage_User_Reviews.length) {
+            this.setState({
+                currentIndex: 0
+            })
+        } else {
+            this.setState({
+                currentIndex: currentIndex + 1
+            })
+        }
+    }
+
     render() {
         return (
             <section className="homepageReviews">
                 <div className="wrapper">
                     <h1>Client Reviews</h1>
-                    <Slider {...settings}>
-                    {Homepage_User_Reviews.map((review, idx) => {
-                            return (
-                                <div key={idx} style={{ padding: 1, height: 200, backgroundColor: '#7993A0' }}>
-                                    <p className="clientMessage">"{review.message}"</p>
-                                    <p className="clientName">-{review.name}</p>
-                                </div>
-                            )
-                        })} 
-                    </Slider>
+                    {this.renderReview()}
                 </div>
             </section>
         )
