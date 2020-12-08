@@ -44,6 +44,10 @@
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }
 
+.fadeIn {
+    transition: ease-in-out 5s;
+}
+
 @media only screen and (max-width: 450px) {
     .wrapper {
         width: 80%;

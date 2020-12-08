@@ -5,14 +5,6 @@
   font-size: 18px;
 }
 
-/* main > div {
-  width: 66%;
-  margin-left: auto;
-  margin-right: auto;
-  color: black;
-  background-color: white;
-} */
-
 li {
   list-style-type: none;
   padding: 0;
@@ -24,10 +16,8 @@ ul {
 }
 
 /*Header*/
+
 main {
-  /* background-image: url('../src/assests/images/paw_print.png');
-  background-repeat: repeat;
-  background-size: 500px 500px; */
   width: 66%;
   margin-left: auto;
   margin-right: auto;
@@ -303,12 +293,6 @@ textarea {
 
 
 /* Mobile CSS */
-
-/* @media only screen and (max-width: 1500px) {
-  .missionStatement > div {
-    width: 75%;
-  }
-} */
 
 @media only screen and (max-width: 1440px ) {
   
