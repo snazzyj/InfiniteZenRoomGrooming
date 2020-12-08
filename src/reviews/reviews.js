@@ -7,7 +7,7 @@ class Reviews extends Component {
         return (
             <section className="reviewSection">
                 <div className="wrapper">
-                    <h1>Zen Roomers Reviews</h1>
+                    <h1>Zen "Roomers" Reviews</h1>
                     {ReviewBank.map((review, idx) => {
                             return (
                                 <div key={idx} className="cl_review">
