@@ -11,8 +11,11 @@ import Dog10 from '../assests/dogs/dog10.jpg';
 import Dog11 from '../assests/dogs/dog11.jpg';
 import Dog12 from '../assests/dogs/dog12.jpg';
 import Dog13 from '../assests/dogs/dog13.jpg';
+import Dog14 from '../assests/dogs/dog14.jpg';
 import Dog15 from '../assests/dogs/dog15.jpg';
+import Dog16 from '../assests/dogs/dog16.jpg';
 import Dog17 from '../assests/dogs/dog17.jpg';
+import Dog18 from '../assests/dogs/dog18.jpg';
 import Dog20 from '../assests/dogs/dog20.jpg';
 import Dog21 from '../assests/dogs/dog21.jpg';
 import Dog22 from '../assests/dogs/dog22.jpg';
@@ -74,12 +77,23 @@ const ImageData = [
     },
     {
         text: 'Picture of Dog',
+        image: Dog14
+    },
+    {
+        text: 'Picture of Dog',
         image: Dog15
     },
-    
+    {
+        text: 'Picture of Dog',
+        image: Dog16
+    },
     {
         text: 'Picture of Dog',
         image: Dog17
+    },
+    {
+        text: 'Picture of Dog',
+        image: Dog18
     },
     {
         text: 'Picture of Dog',

@@ -70,7 +70,7 @@
     text-align: center;
 }
 
-.overnight > ul > li > span {
+.overnight > ul > li > span, .petCare > ul > li > span {
     font-weight: bold;
 }
 

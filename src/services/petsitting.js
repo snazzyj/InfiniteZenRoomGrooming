@@ -12,7 +12,7 @@ class AdditionalServices extends Component {
                 <div className="overnight">
                 <h2>Overnight Stays</h2>
                 <ul>
-                    <li>$55 (up to 2 dogs) per night</li>
+                    <li>Dogs: $55 (Up to 2) per Night</li>
                     <li>$12 <span>per additional dog</span></li>
 
                     <li>4th dog is free!</li>
@@ -33,7 +33,7 @@ class AdditionalServices extends Component {
                 <div className="petCare">
                 <h2>Additional Pet Care</h2>
                 <ul>
-                    <li>$8 per Day For The Following Pets:
+                    <li>$18 per Day For The Following Pets:
                         <ul className="subList">
                             <li>Lizards</li>
                             <li>Snakes</li>
@@ -46,9 +46,8 @@ class AdditionalServices extends Component {
                         </ul>
                     </li>
 
-                    <li>
-                        Cats: 12$ per Day
-                    </li>
+                    <li>Cats: 25$ per Night (Up to 2)</li>
+                    <li>$8 <span>per additional cat</span></li>
                     <br />
 
                     <li><h4>Includes:</h4>
