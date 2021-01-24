@@ -5,7 +5,6 @@ class Gallary extends Component {
     
     render() {
         const {photos} = this.props;
-        console.log({photos})
         return (
             <section className="dogGallary">
                 <div className="gallary">

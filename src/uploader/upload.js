@@ -17,7 +17,6 @@ class Upload extends Component {
         let url = `${API_URL}/upload`;
         let fd = new FormData();
         fd.append('photo', this.state.image)
-        console.log(this.state.image)
         if(!this.state.image.name.match(/\.(jpg|jpeg|png)$/)) {
             return this.setState({
                 error: 'Please upload an image',
@@ -44,7 +43,6 @@ class Upload extends Component {
         e.preventDefault();
         const {email, password} = e.target;
         const url = `${API_URL}/login`;
-        console.log(email.value, password.value)
         const user = {
             email: email.value,
             password: password.value
@@ -83,7 +81,6 @@ class Upload extends Component {
     render() {
         const { isLoggedIn } = this.props;
         const {error, message, showPopUp} = this.state;
-        console.log(this.state)
         return (
             <Fragment>
                 {!isLoggedIn ? 
