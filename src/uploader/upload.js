@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import './upload.css'
 const API_URL = 'https://pacific-fortress-97426.herokuapp.com'
 
 class Upload extends Component {
@@ -6,7 +7,8 @@ class Upload extends Component {
     state = {
         image: null,
         error: null,
-        message: null
+        message: null,
+        showPopUp: false,
     }
 
     handleUpload = (e) => {
@@ -17,8 +19,9 @@ class Upload extends Component {
         fd.append('photo', this.state.image)
         console.log(this.state.image)
         if(!this.state.image.name.match(/\.(jpg|jpeg|png)$/)) {
-            this.setState({
-                error: 'Please upload an image'
+            return this.setState({
+                error: 'Please upload an image',
+                showPopUp: true
             })
         }
         fetch(url, {
@@ -28,18 +31,12 @@ class Upload extends Component {
             },
             body: fd
         }).then((res) => {
-            if (!res.ok) this.setState({error: "Something went wrong during the upload", message: null});
+            if (!res.ok) this.setState({error: "Something went wrong during the upload", message: null, showPopUp: true});
             return res.json();
         }).then((data) => {
-            if(data) this.setState({message: "Upload Complete!", error: null})
+            if(data) this.setState({message: "Upload Complete!", error: null, showPopUp: true})
         }).catch((e) => {
             console.log(e)
-        })
-    }
-
-    onImageChange = (e) => {
-        this.setState({
-            image: e.target.files[0]
         })
     }
 
@@ -59,7 +56,7 @@ class Upload extends Component {
             },
             body: JSON.stringify(user)
         }).then((res) => {
-            if(!res.ok) alert('Could not login')
+            if(!res.ok) this.setState({error: 'Wrong email or password'})
 
             return res.json();
         }).then((data) => {
@@ -69,11 +66,24 @@ class Upload extends Component {
         })
     }
 
+    onImageChange = (e) => {
+        this.setState({
+            image: e.target.files[0]
+        })
+    }
+
+    resetState = () => {
+        this.setState({
+            error: null,
+            message: null,
+            showPopUp: false
+        })
+    }
+
     render() {
-        const { user, isLoggedIn } = this.props;
-        const {error, message} = this.state;
+        const { isLoggedIn } = this.props;
+        const {error, message, showPopUp} = this.state;
         console.log(this.state)
-        console.log(this.props)
         return (
             <Fragment>
                 {!isLoggedIn ? 
@@ -96,8 +106,13 @@ class Upload extends Component {
                         <input type="submit" value="upload" />
                     </form>
 
-                    <p>{error}</p>
-                    <p>{message}</p>
+                    {showPopUp ?
+                    <div className="upload_message">
+                        <p>{error}</p>
+                        <p>{message}</p>
+                        <button onClick={this.resetState}>Close</button>
+                    </div>
+                    : '' }
                 </section>
                 }
             </Fragment>
