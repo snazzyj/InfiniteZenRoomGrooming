@@ -1,3 +1,7 @@
+.upload, .login_form {
+  margin-top: 75px;
+  height: 100vh;
+}
 
 /*General Styling*/
 .App {

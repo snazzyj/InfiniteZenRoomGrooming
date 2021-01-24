@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
-import ImageData from './images.js';
 import './gallery.css'
 
 class Gallary extends Component {
     
     render() {
+        const {photos} = this.props;
+        console.log({photos})
         return (
             <section className="dogGallary">
                 <div className="gallary">
-                    {ImageData.map((img, index) => {
+                    {photos.map((img) => {
+                        const {url} = img.photo;
                         return (
-                                <img src={img.image} alt={img.text} key={index} className="dogPhotos"/>
+                                <img src={url} alt={img.text} key={img._id} className="dogPhotos"/>
                         )
                     })}
                 </div> 
