@@ -1,0 +1,33 @@
+.footer {
+    min-width: 100%;
+    max-height: 50px;
+    min-height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: #3a515c;
+    font-size: 18px;
+    color: black;
+}
+
+.footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer > ul > li {
+    padding: 10px;
+    color: white;
+}
+
+.footer > ul > li > a {
+    color: white
+}
+.footer > ul > li > a:visited {
+    color: white
+}
+.footer > ul > li > a:hover {
+    color: #f5d000;
+}
+

@@ -10,6 +10,7 @@ import Nav from './nav/nav';
 import MobileNav from './nav/mobileNav';
 import AdditionalServices from './services/petsitting.js';
 import Upload from './uploader/upload';
+import Footer from './footer/footer';
 import './App.css';
 
 class App extends Component {
@@ -88,6 +89,7 @@ class App extends Component {
             </Switch>
           </main>
 
+          <Footer windowWidth={isMobile} />
         </BrowserRouter>
       </div>
     );
